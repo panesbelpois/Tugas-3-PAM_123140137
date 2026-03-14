@@ -17,18 +17,18 @@ Anisah's Profile App adalah aplikasi multi-platform yang dirancang untuk menampi
 
 ### Android Application Screenshots
 
-![Android Dashboard](build/assets/ss1.png)  
+![Android Dashboard](screenshots/ss1.png)  
 *Main Dashboard displaying profile information with a toggle button for contact details.*
 
-![Android Data Input](build/assets/ss2.png)  
+![Android Data Input](screenshots/ss2.png)  
 *Expanded view showing contact information card with email, phone, and location.*
 
 ### Desktop Application Screenshots
 
-![Desktop Main Window](build/assets/ss3.png)  
+![Desktop Main Window](screenshots/ss3.png)  
 *Overview of the main application window with profile header and interactive button.*
 
-![Desktop Settings and Reports](build/assets/ss4.png)  
+![Desktop Settings and Reports](screenshots/ss4.png)  
 *Detailed contact information panel with icons and formatted text.*
 
 ## 💻 Persyaratan Sistem

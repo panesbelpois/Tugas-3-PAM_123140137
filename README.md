@@ -53,8 +53,6 @@ Anisah's Profile App adalah aplikasi multi-platform yang dirancang untuk menampi
 3. Transfer file APK dari `composeApp/build/outputs/apk/debug/` ke perangkat Android.
 4. Instal APK dan buka aplikasi.
 
-Atau, unduh langsung dari [Google Play Store](https://play.google.com/store) (jika tersedia).
-
 ### Desktop
 1. Pastikan Java 11+ terinstal di sistem Anda.
 2. Buka terminal di root proyek.

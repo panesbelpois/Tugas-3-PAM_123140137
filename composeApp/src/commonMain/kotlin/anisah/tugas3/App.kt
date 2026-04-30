@@ -89,17 +89,36 @@ fun ProfileHeader(name: String, nim: String, bio: String) {
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
 
-        // Komponen Image sederhana yang otomatis memotong gambar kotak menjadi bulat
-        Image(
-            painter = painterResource(Res.drawable.profile),
-            contentDescription = "Profile Picture",
-            modifier = Modifier
-                .size(120.dp)
-                // Modifiers (15%): Chaining modifier .clip wajib ada
-                .clip(CircleShape),
-            // ContentScale.Crop akan melakukan zoom dan memotong tepi agar pas di lingkaran
-            contentScale = ContentScale.Crop
-        )
+        // Layout Implementation (25%): Box untuk menumpuk komponen (misalnya indikator online di atas foto profil)
+        Box(contentAlignment = Alignment.BottomEnd) {
+            // Komponen Image sederhana yang otomatis memotong gambar kotak menjadi bulat
+            Image(
+                painter = painterResource(Res.drawable.profile),
+                contentDescription = "Profile Picture",
+                modifier = Modifier
+                    .size(120.dp)
+                    // Modifiers (15%): Chaining modifier .clip wajib ada
+                    .clip(CircleShape),
+                // ContentScale.Crop akan melakukan zoom dan memotong tepi agar pas di lingkaran
+                contentScale = ContentScale.Crop
+            )
+            
+            // Indikator Online (Lingkaran Hijau dengan border Putih)
+            Box(
+                modifier = Modifier
+                    .size(28.dp)
+                    .clip(CircleShape)
+                    .background(Color.White)
+                    .padding(4.dp)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(CircleShape)
+                        .background(Color(0xFF4CAF50))
+                )
+            }
+        }
 
         Spacer(modifier = Modifier.height(8.dp))
 
